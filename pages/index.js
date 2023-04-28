@@ -55,6 +55,8 @@ export default function Home() {
       { frequency }
     );
   }, [frequency, speed]);
+
+  const speedKm = speed * 3.6;
   return (
     <div className="flex flex-col items-center min-h-screen justify-center bg-blue-400">
       <div className="flex flex-col bg-black p-5 w-4/5 items-center rounded-lg shadow-lg">
@@ -91,10 +93,7 @@ export default function Home() {
         <p className="my-2 border border-blue-300 p-2 rounded-md w-3/5 text-center text-neutral-600">
           {" "}
           Speed:{" "}
-          <span className="font-semibold text-lg text-white">
-            {" "}
-            {speed?.toFixed(1) * 3.6}{" "}
-          </span>
+          <span className="font-semibold text-lg text-white"> {speedKm} </span>
           kh/h
         </p>
         <div className="w-full bg-gray-200 rounded-full h-1.5 mb-4 dark:bg-gray-700">
