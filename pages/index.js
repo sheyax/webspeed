@@ -88,15 +88,15 @@ export default function Home() {
           m/s
         </p>
 
-        {/* <p className="my-2 border border-blue-300 p-2 rounded-md w-3/5 text-center text-neutral-600">
+        <p className="my-2 border border-blue-300 p-2 rounded-md w-3/5 text-center text-neutral-600">
           {" "}
-          Avg Speed:{" "}
+          Speed:{" "}
           <span className="font-semibold text-lg text-white">
             {" "}
-            {speedAvg?.toFixed(1)}{" "}
+            {speed?.toFixed(1) * 3.6}{" "}
           </span>
-          m/s
-        </p> */}
+          kh/h
+        </p>
         <div className="w-full bg-gray-200 rounded-full h-1.5 mb-4 dark:bg-gray-700">
           <div
             className="bg-blue-600 h-1.5 rounded-full dark:bg-blue-500"
