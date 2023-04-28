@@ -93,7 +93,10 @@ export default function Home() {
         <p className="my-2 border border-blue-300 p-2 rounded-md w-3/5 text-center text-neutral-600">
           {" "}
           Speed:{" "}
-          <span className="font-semibold text-lg text-white"> {speedKm} </span>
+          <span className="font-semibold text-lg text-white">
+            {" "}
+            {speedKm?.toFixed(1)}{" "}
+          </span>
           kh/h
         </p>
         <div className="w-full bg-gray-200 rounded-full h-1.5 mb-4 dark:bg-gray-700">
