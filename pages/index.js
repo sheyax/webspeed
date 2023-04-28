@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Slider } from "@mui/material";
 
 export default function Home() {
   const [x, setX] = useState(null);
@@ -87,7 +88,7 @@ export default function Home() {
           m/s
         </p>
 
-        <p className="my-2 border border-blue-300 p-2 rounded-md w-3/5 text-center text-neutral-600">
+        {/* <p className="my-2 border border-blue-300 p-2 rounded-md w-3/5 text-center text-neutral-600">
           {" "}
           Avg Speed:{" "}
           <span className="font-semibold text-lg text-white">
@@ -95,7 +96,9 @@ export default function Home() {
             {speedAvg?.toFixed(1)}{" "}
           </span>
           m/s
-        </p>
+        </p> */}
+
+        <Slider aria-label="Speed" value={speed?.toFixed(1)} />
       </div>
     </div>
   );
